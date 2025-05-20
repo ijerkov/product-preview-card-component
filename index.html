@@ -5,24 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./reset.css"/>
+  <link rel="stylesheet" href="./style.css"/>
   <title>Frontend Mentor | Product preview card component</title>
 
 </head>
 <body>
 
-  Perfume
+<main class="main-conatiner">
+  <section class="product-section">
+    <div class="product-card-wrapper">
+      <article class="product-card">
+        <picture>
+          <source media="(min-width:664px)" srcset="./images/image-product-desktop.jpg">
+          <img alt="Perfume image" src="./images/image-product-mobile.jpg" />
+        </picture>
+        <div class="product-card-content">
+          <div class="product-info">
+            <p class="product-category text-preset-4">Perfume</p>
+            <h1 class="product-title text-preset-1">Gabrielle Essence Eau De Parfume</h1>
+            <p class="text-preset-3">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+              Perfumer-Creator for the House of CHANEL.</p>
+          </div>
 
-  Gabrielle Essence Eau De Parfum
+          <p class="product-price"><span class="product-price-active text-preset-1">$149.99</span>
+            <span class="product-price-old text-preset-5">$169.99</span></p>
+          <button class="btn-icon add-to-cart text-preset-2" onclick="showAlert()"><img alt="cart icon" src="./images/icon-cart.svg" /> Add to Cart</button>
+        </div>
+      </article>
+    </div>
 
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
+  </section>
 
-  $149.99
-  $169.99
+</main>
 
-  Add to Cart
-  
-
+<script>
+  function showAlert() {
+    alert("Item added to cart!");
+  }
+</script>
 </body>
 </html>
