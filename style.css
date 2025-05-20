@@ -83,6 +83,11 @@
     overflow: hidden;
 }
 
+.product-picture{
+    height: 100%;
+    object-fit: cover;
+}
+
 .product-title{
     color: var(--black);
 }
